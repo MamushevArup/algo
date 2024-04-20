@@ -1,5 +1,12 @@
 package main
 
+// longestIncreasingSubsequence find the length of the longest increasing subsequence
+// it uses dynamic programming to find the result
+// where we should iterate forward and backward for each element and find max value in subsequence
+// going from the end to the slice
+// Time complexity is O(n^2)
+// Space complexity is O(n)
+// where n is the length of the slice
 func longestIncreasingSubsequence(slice []int) int {
 	if len(slice) == 0 {
 		return 0

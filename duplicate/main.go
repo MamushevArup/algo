@@ -1,5 +1,11 @@
 package main
 
+// removeDuplicate eliminate duplicates from a slice of integers
+// this program is not use any additional memory space
+// but it is a bit slower than it can be with maps
+// time complexity is O(n^2)
+// space complexity is O(1) (where we not include the slice which coming from input)
+// where n is the length of the slice
 func removeDuplicate(arr []int) []int {
 	if len(arr) == 0 {
 		return arr
